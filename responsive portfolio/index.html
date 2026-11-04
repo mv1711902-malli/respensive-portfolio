@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle" id="theme-toggle"
+                    aria-label="Switch to dark mode">🌙</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hello, I'm <span>Veeramreddy Nagamallikarjuna</span></h1>
+
+                <h2>Frontend Web Developer</h2>
+
+                <p>
+                    I am a passionate developer interested in creating
+                    modern, responsive and user-friendly websites
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View My Work
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-box">
+                    <span>WEB DEVELOPER</span>
+                    <h2>Creative<br>Developer</h2>
+                    <p>Design • Develop • Create</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section container" id="about">
+
+            <div class="section-heading">
+                <p>GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div>
+                    <h3>Who Am I?</h3>
+
+                    <p>
+                        I am a student and aspiring web developer.
+                        I enjoy learning new technologies and building
+                        creative websites.
+                    </p>
+
+                    <p>
+                        My goal is to improve my technical skills and
+                        become a professional software developer.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>My Interests</h3>
+                    <p>Web Development</p>
+                    <p>Programming</p>
+                    <p>Problem Solving</p>
+                    <p>Technology</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>MY TECHNICAL KNOWLEDGE</p>
+                    <h2>My Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>HTML5</h3>
+                        <p>Semantic web page structure</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>CSS3</h3>
+                        <p>Styling and responsive layouts</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Interactive website development</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <p>Programming and problem solving</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading">
+                <p>MY RECENT WORK</p>
+                <h2>My Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>Login & Signup Page</h3>
+                    <p>
+                        A modern login and registration interface
+                        created using HTML, CSS and JavaScript.
+                    </p>
+                    <span>HTML • CSS • JavaScript</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>Student Registration Form</h3>
+                    <p>
+                        A responsive student registration form
+                        with input fields and validation.
+                    </p>
+                    <span>HTML • CSS • JavaScript</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>Restaurant Website</h3>
+                    <p>
+                        A food ordering website with menu,
+                        cart and order summary features.
+                    </p>
+                    <span>HTML • CSS • JavaScript</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>LET'S CONNECT</p>
+                    <h2>Contact Me</h2>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+
+                    <input type="text" id="name"
+                           placeholder="Your Name" required>
+
+                    <input type="email" id="email"
+                           placeholder="Your Email" required>
+
+                    <textarea id="message"
+                              placeholder="Your Message"
+                              rows="5" required></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+                <p id="form-status" aria-live="polite"></p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 My Portfolio. All Rights Reserved.</p>
+        <p>Designed with HTML, CSS & JavaScript.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
